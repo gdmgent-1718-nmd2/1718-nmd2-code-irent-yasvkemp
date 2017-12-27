@@ -1,5 +1,49 @@
-<nav class="navbar fixed-bottom navbar-light bg-light">
-{%- if site.show-style-guide %}
+<nav class="navbar bottom navbar-dark bg-dark footer">
+<!-- {%- if site.show-style-guide %}
     <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
-{%- endif %}
+{%- endif %} -->
+    <div class="col-12 col-md-6">
+        <p>Schrijf je in voor onze nieuwsbrief en krijg 5 Euro korting!</p>
+        <form action="/action_page.php">
+            <div class="form-group"> 
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+        </form>
+        <button type="submit" class="btn btn-default">Inschrijven</button>
+        <p>Betaalopties
+            <div>
+                <img src="img/visa.png" alt="" height="50px;">
+                <img src="img/bancontact.png" alt="" height="35px;">
+                <img src="img/mastercard.png" alt="" height="50px;">
+                <img src="img/paypal.png" alt="" height="50px;">
+            </div>
+        </p>
+    </div>
+    <div class="col-12 col-md-6">
+        <p class="vragen">
+            Contact: <br>
+            Kortrijksesteenweg 143<br>
+            9000 Gent<br>
+            <br>
+            Telefoonnummer: 09 354 76 88<br>
+        </p>
+        <p>
+            Volg ons op sociale media
+            <div>
+                <a href="facebook.com" target="blank"  class="socialmedia">
+                    <img src="img/facebook.png" alt="" height="30px;">
+                </a>
+                <a href="youtube.com" target="blank"  class="socialmedia">
+                    <img src="img/youtube.png" alt="" height="30px;">
+                </a>
+                <a href="instagram.com" target="blank"  class="socialmedia">
+                    <img src="img/instagram.png" alt="" height="30px;">
+                </a>
+                <a href="twitter.com" target="blank"  class="socialmedia">
+                    <img src="img/twitter.png" alt="" height="30px;">
+                </a>
+            </div>
+        </p>
+    </div>
 </nav>

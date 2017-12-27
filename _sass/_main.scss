@@ -1,3 +1,215 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+
+  * {box-sizing: border-box;}
+  ul {list-style-type: none;}
+
+.row p{
+    margin-top: 50px;
+}
+
+.row h3{
+    font-size: 30pt;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.row h5 {
+    font-size: 20pt;
+    color: #777;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.logo-text {
+    font-size: 5pt;
+}
+
+.navigation {
+    margin-bottom: 50px;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.footer p {
+    margin-top: 35px;
+}
+
+.socialmedia {
+    margin-right: 15px;
+}
+
+.btn {
+    margin: 25px 0px 25px;
+    width: 200px;
+}
+
+.row a {
+    color: white;
+}
+
+.footer {
+    margin-top: 100px;
+    color: #999;
+}
+
+.carousel {
+    margin-bottom: 100px;
+}
+
+.carousel-item {
+    overflow: hidden;
+    height: 280px;
+    width: 500px;
+}
+
+@media (max-width: 600px) {
+    .carousel {
+      display: none; 
+    }
+  }
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+  @media (min-width: 600px) {
+    .image {
+      display: none; 
+    }
+  }
+
+.hero {
+    background: #DDD url("../../img/vr_8.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height:  600px;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
+
+  .hero__title { 
+    margin: 0;
+    font-size: 3rem;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    position:  absolute;
+    color: #FFF;
+    top: 37%;
+    left: 57%;
+    text-align: center;
+    transform:  translate(-50%,-50%);
+    z-index: 1;
+    text-shadow: 0 0 10px #333;
+  }
+
+.calender {
+    margin-bottom: 40px;
+}
+
+.uur {
+    margin-bottom: 40px;
+}
+
+  .month {
+      padding: 70px 25px;
+      width: 100%;
+      background: rgb(5, 197, 255);
+      text-align: center;
+  }
+  
+  .month ul {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .month ul li {
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+  
+  .month .prev {
+      float: left;
+      padding-top: 10px;
+  }
+  
+  .month .next {
+      float: right;
+      padding-top: 10px;
+  }
+  
+  .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ddd;
+  }
+  
+  .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+  }
+  
+  .days {
+      padding: 10px 0;
+      background: #eee;
+      margin: 0;
+  }
+  
+  .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size:12px;
+      color: #777;
+  }
+  
+  .days li .active {
+      padding: 5px;
+      background: rgb(5, 197, 255);
+      color: white !important
+  }
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:720px) {
+      .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+      .weekdays li, .days li {width: 12.5%;}
+      .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+      .weekdays li, .days li {width: 12.2%;}
+  }
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+  @media screen and (max-width:766px){
+    .vragen{display:none}
+  }
+
+  @media only screen and (min-width: 768px){
+    .vragen-mobile{
+      display:none;
+    }
+  }
+
